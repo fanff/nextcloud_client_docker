@@ -1,17 +1,22 @@
 
-# install : 
+# Setup : 
 
-
-build like 
+* Build docker image with: 
 
     docker build -t nextcloudclient . 
 
+* make a shared directory 
 
-make a shared directory 
-mkdir -p /mnt/owncd/shared
+    mkdir -p /mnt/owncd/shared
 
-vim a file "unsynced"  in it
+* vim a file named "unsynced" in it. One line, one exclude, like:
 
-vim a runscript.sh like exemple
+    music
+    Movies
+    pR0n
 
-run to sync, put in cron or something 
+
+* vim a runscript.sh like the example one. Fill in the gaps
+
+* Run to sync, put in cron or something for automatic sync
+
